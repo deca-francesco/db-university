@@ -55,3 +55,7 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file qu
     UPDATE teachers
     SET office_number = "126"
     WHERE id = 58;
+
+11. DELETE
+    FROM students
+    WHERE id = 123456789
