@@ -26,21 +26,26 @@ Utilizzare https://www.drawio.com/ per la creazione dello schema come visto in c
 - studenti
 - voti
 
-## dipartimenti
+## dipartimenti (1 => many corsi)
 - id | BIGINT AI PK
-- nome | VARCHAR(50) NOTNULL
+- nome | VARCHAR(150) NOTNULL
 
-## corsi
+## corsi (1 => many materie)
+
 - id | BIGINT AI PK
 - id_dipartimento | BIGINT AI FK
 - nome | VARCHAR(50) NOTNULL
-- descrizione | TEXT(500) NULL
+- descrizione | TEXT(500) NOTNULL
 
 ## materie
 - id | BIGINT AI PK
 - id_corso | BIGINT AI FK
 - nome | VARCHAR(50) NOTNULL
-- descrizione | TEXT(500) NULL
+- descrizione | TEXT(500) NOTNULL
+
+## Pivot: materia_insegnante
+- id_materia | BIGINT AI FK
+- id_insegnante | BIGINT AI FK
 
 ## insegnanti
 - id | BIGINT AI PK
@@ -50,19 +55,16 @@ Utilizzare https://www.drawio.com/ per la creazione dello schema come visto in c
 ## appelli
 - id | BIGINT AI PK
 - id_materia | BIGINT AI FK
-- id_studente | BIGINT AI FK
-- id_insegnante | BIGINT AI FK
 - data | DATETIME NULL DEFAULT(NULL)
+
+## Pivot: appello_studente
+- id_studente FK
+- id_appello FK
+- voto | TINYINT NOTNULL
 
 ## studenti
 - id | BIGINT AI PK
 - id_corso | BIGINT AI FK
 - nome | VARCHAR(50) NOTNULL
 - cognome | VARCHAR(50) NOTNULL
-
-## voti
-- id | BIGINT AI PK
-- id_appello | BIGINT AI FK
-- id_studente | BIGINT AI FK
-- voto | TINYINT NOTNULL
 
