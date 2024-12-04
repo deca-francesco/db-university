@@ -41,3 +41,7 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file qu
 
 7.  SELECT *
     FROM departments
+
+8.  SELECT *
+    FROM teachers
+    WHERE phone IS null
