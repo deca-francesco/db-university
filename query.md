@@ -15,10 +15,12 @@ Cosa consegnare?
 Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file query.md e caricatelo nella vostra repo.
 
 
-1.  select *
-    from students
-    where year(date_of_birth) = 1990;
+1.  SELECT *
+    FROM students
+    WHERE YEAR(date_of_birth) = 1990;
 
-2.  select *
-    from courses
-    where cfu > 10;
+2.  SELECT *
+    FROM courses
+    WHERE cfu > 10;
+    
+3.  
