@@ -42,12 +42,12 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file qu
 7.  SELECT COUNT(*)
     FROM departments
 
-8.  SELECT *
+8.  SELECT COUNT(*)
     FROM teachers
     WHERE phone IS null
 
-9.  INSERT INTO students
-    VALUES (123456789, 18, "Ugo", "Fantozzi", "1925-07-17", "FNTUGO25L17H501A", "1975-07-17", "19750717", "ugofantocci@megaditta.com")
+9.  INSERT INTO students (degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
+    VALUES (18, "Ugo", "Fantozzi", "1925-07-17", "FNTUGO25L17H501A", "1975-07-17", "19750717", "ugofantocci@megaditta.com")
 
 10. UPDATE teachers
     SET office_number = "126"
@@ -55,4 +55,4 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file qu
 
 11. DELETE
     FROM students
-    WHERE id = 123456789
+    WHERE id = 5001
