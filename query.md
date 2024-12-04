@@ -34,3 +34,7 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file qu
 5.  SELECT *
     FROM exams
     WHERE date = "2020-06-20" AND hour > "14:00:00"
+
+6.  SELECT *
+    FROM degrees
+    WHERE level = "magistrale"
