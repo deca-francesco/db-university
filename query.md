@@ -49,4 +49,9 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file qu
 9.  INSERT INTO students
     VALUES (123456789, 18, "Ugo", "Fantozzi", "1925-07-17", "FNTUGO25L17H501A", "1975-07-17", "19750717", "ugofantocci@megaditta.com")
 
-10. 
+10. SELECT *
+    FROM teachers
+    WHERE name = "Pietro" AND surname = "Rizzo";
+    UPDATE teachers
+    SET office_number = "126"
+    WHERE id = 58;
