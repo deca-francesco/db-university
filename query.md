@@ -23,4 +23,10 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file qu
     FROM courses
     WHERE cfu > 10;
     
-3.  
+3.  SELECT *
+    FROM students
+    WHERE YEAR(CURDATE()) - YEAR(date_of_birth) > 30;
+
+4.  SELECT *
+    FROM courses
+    WHERE period = "I semestre" AND year = 1
