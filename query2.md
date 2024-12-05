@@ -32,4 +32,8 @@
     FROM exam_student
     GROUP BY exam_id
 
-4.  
+4.  SELECT COUNT(id) , department_id
+    FROM degrees
+    GROUP BY department_id
+
+5.  
