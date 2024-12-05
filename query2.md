@@ -63,4 +63,13 @@
     ON degrees.department_id = departments.id
     ORDER BY students.surname , students.name
 
-9.  
+9.  SELECT *
+    FROM courses
+    JOIN degrees
+    ON courses.degree_id = degrees.id
+    JOIN course_teacher
+    ON courses.id = course_teacher.course_id
+    JOIN teachers
+    ON course_teacher.teacher_id = teachers.id
+
+10. 
