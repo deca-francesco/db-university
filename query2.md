@@ -88,3 +88,11 @@
     FROM exam_student
     WHERE vote >= 18
     GROUP BY student_id
+
+    <!-- con nome -->
+    SELECT COUNT(exam_student.exam_id) , exam_student.student_id , students.name , students.surname , MAX(vote)
+    FROM exam_student
+    JOIN students
+    ON exam_student.student_id = students.id
+    WHERE vote >= 18
+    GROUP BY student_id
