@@ -49,4 +49,10 @@
     WHERE departments.name = "Dipartimento di Neuroscienze"
     AND degrees.level = "magistrale"
 
-7.  
+7.  SELECT *
+    FROM course_teacher
+    JOIN courses
+    ON course_teacher.course_id = courses.id
+    WHERE teacher_id = 44
+
+8.  
