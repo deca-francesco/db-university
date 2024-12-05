@@ -20,4 +20,6 @@
 
 
 
-1.  
+1.  SELECT COUNT(id) , YEAR(enrolment_date)
+    FROM students
+    GROUP BY YEAR(enrolment_date)
