@@ -41,3 +41,12 @@
     JOIN degrees
     ON students.degree_id = degrees.id
     WHERE degrees.name = "Corso di Laurea in Economia"
+
+6.  SELECT *
+    FROM degrees
+    JOIN departments
+    ON degrees.department_id = departments.id
+    WHERE departments.name = "Dipartimento di Neuroscienze"
+    AND degrees.level = "magistrale"
+
+7.  
