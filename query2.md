@@ -84,4 +84,7 @@
     ON degrees.department_id = departments.id
     WHERE departments.name = "Dipartimento di Matematica"
 
-11. 
+11. SELECT COUNT(exam_id) , student_id , MAX(vote)
+    FROM exam_student
+    WHERE vote >= 18
+    GROUP BY student_id
