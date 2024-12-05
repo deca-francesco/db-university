@@ -36,4 +36,8 @@
     FROM degrees
     GROUP BY department_id
 
-5.  
+5.  SELECT *
+    FROM students
+    JOIN degrees
+    ON students.degree_id = degrees.id
+    WHERE degrees.name = "Corso di Laurea in Economia"
