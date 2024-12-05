@@ -55,4 +55,12 @@
     ON course_teacher.course_id = courses.id
     WHERE teacher_id = 44
 
-8.  
+8.  SELECT *
+    FROM students
+    JOIN degrees
+    ON students.degree_id = degrees.id
+    JOIN departments
+    ON degrees.department_id = departments.id
+    ORDER BY students.surname , students.name
+
+9.  
