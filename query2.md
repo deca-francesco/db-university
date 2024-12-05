@@ -28,4 +28,8 @@
     FROM teachers
     GROUP BY office_address
 
-3.  
+3.  SELECT AVG(vote) as media_voto , exam_id
+    FROM exam_student
+    GROUP BY exam_id
+
+4.  
